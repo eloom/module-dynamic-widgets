@@ -1,0 +1,17 @@
+<?php /* @var \Eloom\DynamicWidgets\Block\Widget\CartPrice $block */?>
+<div id="promotions" class="widget promotions-carousel-wrapper" data-bind="scope:'cart-price-carousel'">
+	<!-- ko template: getTemplate() --><!-- /ko -->
+	<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+               "components": {
+                    "cart-price-carousel": {
+                        "component": "Eloom_DynamicWidgets/js/component/cart-price/carousel"
+                    }
+                }
+            }
+        }
+    }
+  </script>
+</div>

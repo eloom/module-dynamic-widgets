@@ -1,0 +1,7 @@
+<div class="promotions-list-wrapper">
+	<!-- ko if: !isEmpty() -->
+	<div id="promotions-list-itens" class="owl-carousel owl-theme" data-bind="foreach: {data: promotions, afterRender: owlCarouselInitiator}">
+		<div class="item" data-bind="text: message"></div>
+	</div>
+	<!-- /ko -->
+</div>

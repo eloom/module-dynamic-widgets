@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Eloom_DynamicWidgets::config"
+             title="Dynamic Widget"
+             module="Eloom_DynamicWidgets"
+             action="adminhtml/system_config/edit/section/dholi_dynamic_widgets"
+             parent="Eloom_Core::menu"
+             resource="Eloom_DynamicWidgets::config"
+             sortOrder="50"/>
+    </menu>
+</config>

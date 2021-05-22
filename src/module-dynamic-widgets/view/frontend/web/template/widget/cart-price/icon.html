@@ -1,0 +1,25 @@
+<div class="promotions" data-bind="click: toggle">
+    <a class="action showcart" href="#">
+        <span class="counter qty notifications-counter">
+            <span class="counter-number" data-bind="text: messageCount"></span>
+        </span>
+    </a>
+</div>
+<div class="promotions-list-wrapper" data-bind="css: {visible: visible}">
+    <h3 class="promotions-list-header"><!-- ko i18n: 'Notifications' --><!-- /ko --></h3>
+    <!-- ko if: !isEmpty() -->
+    <ul class="promotions-list" data-bind="foreach: promotions">
+        <li class="item">
+            <div class="message">
+                <span data-bind="text: message"></span>
+            </div>
+        </li>
+    </ul>
+    <!-- /ko -->
+
+    <!-- ko if: isEmpty() -->
+    <p class="promotions-list empty" data-bind="css: {visible: visible}">
+        <strong><!-- ko i18n: 'Currently you have no promotions.' --><!-- /ko --></strong>
+    </p>
+    <!-- /ko -->
+</div>

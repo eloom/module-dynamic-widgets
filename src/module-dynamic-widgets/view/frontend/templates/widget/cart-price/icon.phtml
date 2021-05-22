@@ -1,0 +1,17 @@
+<?php /* @var \Eloom\DynamicWidgets\Block\Widget\CartPrice $block */?>
+<div id="promotions" class="promotions-wrapper" data-bind="scope:'cart-price-icon'">
+	<!-- ko template: getTemplate() --><!-- /ko -->
+	<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+               "components": {
+                    "cart-price-icon": {
+                        "component": "Eloom_DynamicWidgets/js/component/cart-price/icon"
+                    }
+                }
+            }
+        }
+    }
+    </script>
+</div>
