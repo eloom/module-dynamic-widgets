@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
-	<route url="/V1/dholi/dw/address" method="POST">
+	<route url="/V1/eloom/dw/address" method="POST">
 		<service class="Eloom\DynamicWidgets\Api\CartPriceInterface" method="listByAddress"/>
 		<resources>
 			<resource ref="anonymous"/>

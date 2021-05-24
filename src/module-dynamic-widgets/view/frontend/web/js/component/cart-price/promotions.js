@@ -48,7 +48,7 @@ define([
 
 				if(_.size(cartData().items)) {
 					storage.post(
-						urlBuilder.createUrl('/dholi/dw/address', {}),
+						urlBuilder.createUrl('/eloom/dw/address', {}),
 						JSON.stringify({
 							'country': geoAddress.country,
 							'region': geoAddress.state.name,

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
-	<widget class="Eloom\DynamicWidgets\Block\Widget\CartPrice" id="dholi_cart_price_widget" is_email_compatible="true" ttl="86400">
-		<label>dholi | Cart Price Rules</label>
+	<widget class="Eloom\DynamicWidgets\Block\Widget\CartPrice" id="eloom_cart_price_widget" is_email_compatible="true" ttl="86400">
+		<label>eloom | Cart Price Rules</label>
 		<description></description>
 		<parameters>
 			<parameter name="template" xsi:type="select" visible="true" required="true">

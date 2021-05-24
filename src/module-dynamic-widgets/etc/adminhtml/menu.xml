@@ -4,7 +4,7 @@
         <add id="Eloom_DynamicWidgets::config"
              title="Dynamic Widget"
              module="Eloom_DynamicWidgets"
-             action="adminhtml/system_config/edit/section/dholi_dynamic_widgets"
+             action="adminhtml/system_config/edit/section/eloom_dynamic_widgets"
              parent="Eloom_Core::menu"
              resource="Eloom_DynamicWidgets::config"
              sortOrder="50"/>
