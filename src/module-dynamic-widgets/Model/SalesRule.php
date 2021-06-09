@@ -14,8 +14,11 @@ declare(strict_types=1);
 
 namespace Eloom\DynamicWidgets\Model;
 
+use Magento\Checkout\Model\Session;
+use Magento\Customer\Api\Data\GroupInterface;
 use Magento\Framework\App\ObjectManager;
 use Magento\Quote\Model\Quote\Address;
+use Magento\Quote\Model\Quote\AddressFactory;
 use Magento\Store\Model\StoreManagerInterface;
 
 class SalesRule {
@@ -30,22 +33,18 @@ class SalesRule {
 		$this->storeManager = $storeManager;
 	}
 	
-	/**
-	 * @param \stdClass $requestAddress
-	 * @return array
-	 */
 	public function listAppliedRules($country = null, $region = null, $regionId = null, $postcode = null) {
 		$customerGroupId = null;
 		$websiteId = null;
 		$address = null;
-		$quote = ObjectManager::getInstance()->get(\Magento\Checkout\Model\Session::class)->getQuote();
+		$quote = ObjectManager::getInstance()->get(Session::class)->getQuote();
 		if (!$quote || null == $quote->getId()) {
-			$quoteAddressFactory = ObjectManager::getInstance()->create(\Magento\Quote\Model\Quote\AddressFactory::class);
+			$quoteAddressFactory = ObjectManager::getInstance()->create(AddressFactory::class);
 			$address = $quoteAddressFactory->create()->setAddressType(Address::TYPE_SHIPPING);
 			
 			$storeId = $this->storeManager->getStore()->getId();
 			$websiteId = $this->storeManager->getStore($storeId)->getWebsiteId();
-			$customerGroupId = \Magento\Customer\Api\Data\GroupInterface::NOT_LOGGED_IN_ID;
+			$customerGroupId = GroupInterface::NOT_LOGGED_IN_ID;
 		} else {
 			$address = $quote->getBillingAddress();
 			$websiteId = $this->storeManager->getStore($quote->getStoreId())->getWebsiteId();

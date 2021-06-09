@@ -23,17 +23,12 @@ class SalesRuleValidator {
 	
 	private $customerGroupId;
 	
-	/**
-	 * @var \Magento\SalesRule\Model\ResourceModel\Rule\CollectionFactory
-	 */
 	protected $collectionFactory;
 	
-	/**
-	 * @var \Magento\SalesRule\Model\Utility
-	 */
 	protected $validatorUtility;
 	
-	public function __construct(CollectionFactory $collectionFactory, Utility $utility) {
+	public function __construct(CollectionFactory $collectionFactory,
+	                            Utility $utility) {
 		$this->collectionFactory = $collectionFactory;
 		$this->validatorUtility = $utility;
 	}
