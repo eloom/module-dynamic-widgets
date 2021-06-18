@@ -5,9 +5,9 @@
 * 
 * @category     Ã©lOOm
 * @package      Modulo Geolocation
-* @copyright    Copyright (c) 2021 Ã©lOOm (https://www.eloom.com.br)
+* @copyright    Copyright (c) 2021 Ã©lOOm (https://eloom.tech)
 * @version      1.0.0
-* @license      https://www.eloom.com.br/license/
+* @license      https://eloom.tech/license/
 *
 */
 declare(strict_types=1);
@@ -18,7 +18,7 @@ use Magento\Framework\Data\Form\Element\AbstractElement;
 
 class Information extends \Magento\Config\Block\System\Config\Form\Fieldset {
 
-	private $userGuide = 'https://docs.eloom.com.br/dynamic-widgets/';
+	private $userGuide = 'https://docs.eloom.tech/dynamic-widgets/';
 
 	protected $fieldRenderer;
 
