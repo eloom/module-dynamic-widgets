@@ -1,6 +1,6 @@
 {
   "name": "eloom/module-dynamic-widgets",
-  "description": "Dynamic Widgets para Magento 2",
+  "description": "Dynamic Widgets para Magento",
   "homepage": "https://eloom.tech/dynamic-widgets",
   "keywords": [
     "magento",
@@ -24,8 +24,7 @@
   },
   "require": {
     "php": "~7.3|~7.4",
-    "magento/framework": "103.0.*",
-    "eloom/theme-frontend": "dev-main"
+    "magento/framework": "103.0.*"
   },
   "license": [
     "OSL-3.0",
