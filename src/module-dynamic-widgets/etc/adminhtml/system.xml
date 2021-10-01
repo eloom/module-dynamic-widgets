@@ -6,9 +6,19 @@
 			<label>Dynamic Widget</label>
 			<tab>eloom</tab>
 			<resource>Eloom_DynamicWidgets::config</resource>
-			<group id="information" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+			
+			<group id="information" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="0">
 				<label>Information</label>
-				<frontend_model>Eloom\DynamicWidgets\Block\Adminhtml\System\Config\Information</frontend_model>
+				
+				<field id="version" translate="label" type="label" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="0">
+					<label>Installed version</label>
+					<frontend_model>Eloom\DynamicWidgets\Block\Adminhtml\System\Config\InstalledVersion</frontend_model>
+				</field>
+				
+				<field id="docs" translate="label" type="label" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="0">
+					<label>Documentation</label>
+					<frontend_model>Eloom\DynamicWidgets\Block\Adminhtml\System\Config\Documentation</frontend_model>
+				</field>
 			</group>
 		</section>
 	</system>
