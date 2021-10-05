@@ -1,10 +1,10 @@
 <?php
 /**
 * 
-* Geolocation para Magento 2
+* Dynamic Widgets para Magento 2
 * 
 * @category     elOOm
-* @package      Modulo Geolocation
+* @package      Modulo DynamicWidgets
 * @copyright    Copyright (c) 2021 Ã©lOOm (https://eloom.tech)
 * @version      1.0.0
 * @license      https://eloom.tech/license/
